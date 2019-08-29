@@ -1,0 +1,134 @@
+body {
+    font-family: Montserrat;
+}
+
+blockquote {
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.anavbar-nav { 
+  flex-direction: row;
+}
+
+.floating-label-form-group {
+    position: relative;
+    border-bottom: 2px solid #e9ecef;
+	margin-top:20px;
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea{
+	    border: none;
+}
+
+.floating-label-form-group label{
+	    opacity: 0;
+}
+
+    
+.hr, .hr2 {
+ overflow: hidden;
+ text-align: center;
+}
+.hr:before,
+.hr:after {
+ background-color: #999;
+ content: "";
+ display: inline-block;
+ height: 2px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+.hr:before, .hr2:before {
+ right: 0.5em;
+ margin-left: -50%;
+
+}
+.hr:after, .hr2:after {
+ left: 0.5em;
+ margin-right: -50%;
+
+}
+
+.hr2:before,
+.hr2:after {
+ background-color: #fff;
+ content: "";
+ display: inline-block;
+ height: 2px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+
+#pink {
+background: linear-gradient(260deg, rgba(131,58,180,1) 0%, rgba(126,29,253,1) 60%, rgba(252,176,69,1) 100%);
+abackground: #663399;
+
+}
+
+#image {
+opacity:0.5;
+-webkit-filter: drop-shadow(5px 5px 5px #222);
+filter:         drop-shadow(5px 5px 5px #222); 
+}
+
+.footer {color:white;}
+
+#headertext {position:relative;
+    z-index: 1;
+    text-shadow: 3px 4px 5px rgba(0,0,0,0.75);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    background-color: rgba(255,230,60,.85);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+}
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+    
